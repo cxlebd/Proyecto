@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas JS</title>
+    <script language="javascript" type="text/javascript" src="./js/problemas.js"></script>
+    <link rel="stylesheet" href="css/formulario.css">
+</head>
+<body>
+    <main>
+        <div class="problema">
+            1) Suponga que un individuo desea invertir su capital
+            en un banco y desea saber cuánto dinero ganará despues de un mes
+            si el banco paga a razon del 2% mensual.
+            <form class="formulario" action="problemas.html" method="get" name="problema1" onsubmit="return validar1(this)">
+                <br>
+                <b>Capital: </b>
+                <br>
+                <input type="text" name="capital">
+            </form>
+        </div>        
+        <div class="problema">
+            2) Un vendedor recibe un sueldo base más un 10% extra por comisión
+            de sus ventas. El vendedor desea saber cuanto dinero obtendrá
+            por concepto de comisiones por las tres ventas que reliza
+            en el mes y el total que recibirá en el mes tomando en cuanto
+            su sueldo base y comisiones.
+            <form action="problemas.html" method="get" name="problema2" onsubmit="return validar2(this)">
+                
+                <b>Sueldo base: </b>
+                <br>
+                <input type="text" name="sueldo_base" id="problema2">
+            </form>
+        </div>        
+        <div class="problema">
+            3) Una tienda ofrece un descuento del 15% sobre el total de la 
+            compra y un cliente desea saber cuanto deberá pagar finalmente por su compra.
+            <form action="problemas.html" method="get" name="problema3" onsubmit="return validar3(this)">
+                <br><br><br>
+                <b>Precio de la compra: </b>
+                <br>
+                <input type="text" name="precio" id="sueldo">
+            </form>
+        </div>
+        <div class="problema">
+            4) Un alumno desea saber cual será su calificación final en la materia
+            de Algoritmos. Dicha calificación se compone de los siguientes porcentajes: <br>
+            55% del promedio de sus tres calificaciones parciales <br>
+            30% de la calificación del examen final. <br>
+            15% de la calificación de un trabajo final.
+            <br>            
+                <form action="problemas.html" method="get" name="problema4" onsubmit="return validar4(this)" class="calificaciones">
+                    <div>
+                        <b>Parcial 1:</b>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <b>Examen final:</b>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <b>Parcial 2:</b>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <b>Trabajo final:</b>
+                        <br>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <b>Parcial 3:</b>
+                        <br>
+                        <input type="text">
+                    </div>       
+                    <div>
+                        <br>
+                        <input type="submit">
+                    </div>             
+                </form>            
+        </div>
+        <div class="problema">
+            5) Un maestro desea saber que porcentajde hombres y que porcentaje
+            de mujeres hay en un grupo de estudiantes.
+        </div>
+        <div class="problema">
+            6) Relizar un algoritmo que calcule la edad de una persona.
+        </div>
+        <div class="problema">
+            1) Leer 2 números: si son iguales que los multiplique,
+            si el primero es mayo que el segundo que los reste y si no que los sume.        
+        </div>
+        <div class="problema">
+            2) Leer tres números diferentes e imprimir el número mayor de los tres.
+        </div>
+        <div class="problema">
+            3) Determinar la cantidad de dinero que recibirá un  trabajador por
+            concepto de las horas extras trabajadas enu na empresa, sabiendo que cuando
+            las horas de trabajo exceden de 40, el resto se consideran horas extras 
+            y que estas se pagan al doble de una hora normal cuando no exceden de 8;
+            si las horas extras exceden de 8 se pagan las primeras 8 al doble de lo que 
+            se pegan las horas normales y el resto al triple.
+        </div>
+    </main>
+</body>
+</html>
