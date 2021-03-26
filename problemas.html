@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/formulario.css">
 </head>
 <body>
+    <a href="index.html">
+        Regresar
+    </a>
     <main>
         <div class="problema">
             1) Suponga que un individuo desea invertir su capital
@@ -84,26 +87,79 @@
                 </form>            
         </div>
         <div class="problema">
-            5) Un maestro desea saber que porcentajde hombres y que porcentaje
+            5) Un maestro desea saber que porcentaje de hombres y que porcentaje 
             de mujeres hay en un grupo de estudiantes.
+            <form action="problemas.html" method="get" name="problema5" onsubmit="return validar5(this)" class="porcentajes">
+                <div>
+                    <b>Hombres:</b>
+                <br>
+                <input type="text" method="get" name="hombres" id="hombres">
+                </div>
+                <div>
+                    <b>Mujeres:</b>
+                    <br>
+                    <input type="text" method="get" id="mujeres">
+                </div>
+            </form>
         </div>
         <div class="problema">
             6) Relizar un algoritmo que calcule la edad de una persona.
+            <br>
+            <form action="problemas.html" method="get" name="problema6" onsubmit="return validar6(this)" style="margin-top: 15px;">
+                <b>Fecha de nacimiento:</b>
+                <br>
+                <input type="date">
+            </form>
+        </div>        
+        <div class="problema">
+            <p>
+                1) Leer 2 números: si son iguales que los multiplique,
+            si el primero es mayor que el segundo que los reste y si no que los sume.
+            </p>
+            <form action="problemas.html" method="get" name="problema7" onsubmit="return validar7(this)" class="porcentajes">
+                <div>
+                    <b>Número 1:</b>
+                    <input type="number" name="numero1">
+                </div>
+                <div>
+                    <b>Número 2:</b>
+                    <input type="number" name="numero2">
+                </div>
+            </form>
+
         </div>
         <div class="problema">
-            1) Leer 2 números: si son iguales que los multiplique,
-            si el primero es mayo que el segundo que los reste y si no que los sume.        
+            <p>
+                2) Leer tres números diferentes e imprimir el número mayor de los tres.
+            </p>
+            <form action="problemas.html" method="get" name="problema8" class="tres_numeros" onsubmit="return validar8(this)">
+                <div>
+                    <b>Número 1:</b>
+                    <input type="number" name="numero1">
+                </div>
+                <div>
+                    <b>Número 2:</b>
+                    <input type="number" name="numero2">
+                </div>
+                <div>
+                    <b>Número 3:</b>
+                    <input type="number" name="numero3">
+                </div>
+            </form>
         </div>
         <div class="problema">
-            2) Leer tres números diferentes e imprimir el número mayor de los tres.
-        </div>
-        <div class="problema">
+            <p>
             3) Determinar la cantidad de dinero que recibirá un  trabajador por
-            concepto de las horas extras trabajadas enu na empresa, sabiendo que cuando
+            concepto de las horas extras trabajadas en una empresa, sabiendo que cuando
             las horas de trabajo exceden de 40, el resto se consideran horas extras 
             y que estas se pagan al doble de una hora normal cuando no exceden de 8;
             si las horas extras exceden de 8 se pagan las primeras 8 al doble de lo que 
             se pegan las horas normales y el resto al triple.
+            </p>
+            <form action="problemas.html" method="get" name="problema9" style="margin-top: 15px;" onsubmit="return validar9(this)">
+                <b>Horas:</b>
+                <input type="number" name="numero1">
+            </form>
         </div>
     </main>
 </body>

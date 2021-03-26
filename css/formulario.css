@@ -11,9 +11,11 @@ main{
     margin-left: 15%;
     margin-right: 15%;
     margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+
 }
 
 div.problema{
@@ -32,6 +34,7 @@ input{
     height: 30px;
     box-shadow: 2px 2px 5px gray;
     padding: 0 40px 0 10px;
+    width: auto;
 }
 
 .calificaciones{
@@ -44,4 +47,17 @@ input{
 .calificaciones input{
     width: 70%;
     box-shadow: 1px 1px 5px gray;
+}
+
+.porcentajes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5px;
+}
+
+.tres_numeros{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5px;
+    gap: 5px;
 }
