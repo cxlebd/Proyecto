@@ -48,3 +48,17 @@ function comision(){
 
     document.problema2.resultado2.value = "$" + resultado;
 }
+
+/*
+    Problema 3
+*/
+function descuento(){
+    var precio = parseInt(document.problema3.precio.value);
+    var descuento = precio * .15;
+    var resultado =  precio - descuento;
+
+    document.problema3.resultado3.value = "$" + resultado;
+
+}
+
+

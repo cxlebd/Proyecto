@@ -6,17 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problema 3</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/problemas.js"></script>
 </head>
 <body>
     <a href="../problemas.html" style="text-decoration: none; color:brown">Regresar</a>
     <div class="problema">
         3) Una tienda ofrece un descuento del 15% sobre el total de la 
         compra y un cliente desea saber cuanto deberá pagar finalmente por su compra.
-        <form action="problemas.html" method="get" name="problema3" onsubmit="return validar3(this)">
-            <br><br><br>
+        <form action="problema03.html" method="get" name="problema3" onsubmit="return descuento()">            
+            <br>
             <b>Precio de la compra: </b>
             <br>
-            <input type="text" name="precio" id="sueldo">
+            <input type="text" name="precio" id="sueldo" onkeypress="return validarn(event)">
+            <input type="submit">
+            <br>
+            <input type="text" readonly="readonly" name="resultado3" value="$">
+            <br>
+            <input type="button" value="Borrar" name="borrar">
         </form>
     </div>
 </body>
