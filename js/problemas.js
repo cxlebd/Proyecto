@@ -35,7 +35,7 @@ function interes(){
 function borrar(){
     document.formulario.cantidad.value="";
     document.formulario.sueldoti.value="";
-    document.formulario.meses.value="";
+    document.formulario.meses.value="";    
 }
 
 /*
@@ -49,6 +49,11 @@ function comision(){
     document.problema2.resultado2.value = "$" + resultado;
 }
 
+function borrar2(){
+    document.problema2.sueldo_base.value = "";
+    document.problema2.resultado2.value = "$";
+}
+
 /*
     Problema 3
 */
@@ -58,7 +63,10 @@ function descuento(){
     var resultado =  precio - descuento;
 
     document.problema3.resultado3.value = "$" + resultado;
-
 }
 
+function borrar3(){
+    document.problema3.resultado3.value = "$";
+    document.problema3.precio.value = "";
+}
 

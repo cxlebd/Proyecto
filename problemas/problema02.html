@@ -16,13 +16,15 @@
             por concepto de comisiones por las tres ventas que reliza
             en el mes y el total que recibirá en el mes tomando en cuanto
             su sueldo base y comisiones.
-            <form action="problema02.html" method="get" name="problema2" onsubmit="return comision()">
+            <form action="problema02.html" method="get" name="problema2">
                 <b>Sueldo base:</b>
                 <br>
                 <input type="text" id="sueldo_base" onkeypress="return validarn(event)">
-                <input type="submit" value="Enviar">                
+                <input type="button" value="Enviar" onclick="comision()">                
                 <br>
                 <input type="text" name="resultado2" readonly="readonly" value="$">
+                <br>
+                <input type="button" value="Borrar" onclick="borrar2()">
             </form>
     </main>
 </body>
