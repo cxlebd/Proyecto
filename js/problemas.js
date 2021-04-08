@@ -35,9 +35,16 @@ function interes(){
 function borrar(){
     document.formulario.cantidad.value="";
     document.formulario.sueldoti.value="";
+    document.formulario.meses.value="";
 }
 
 /*
     Problema 2
 */
+function comision(){
+    var base = parseInt(document.problema2.sueldo_base.value);
+    var comision = base*10;
+    var resultado = base + (comision * 3);
 
+    document.problema2.resultado2.value = "$" + resultado;
+}
