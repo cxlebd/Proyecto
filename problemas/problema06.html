@@ -4,16 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Problema 6</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/problemas.js"></script>
 </head>
 <body>
+    <a href="../problemas.html">Regresar</a>
     <div class="problema">
         6) Relizar un algoritmo que calcule la edad de una persona.
         <br>
-        <form action="problemas.html" method="get" name="problema6" onsubmit="return validar6(this)" style="margin-top: 15px;">
-            <b>Fecha de nacimiento:</b>
+        <form action="problema06.html" method="get" name="problema6" style="margin-top: 15px;">
+            <b>Fecha de nacimiento con la siguiente nomenclatura: DD-MM-AAAA</b>
             <br>
-            <input type="date">
+            <p>(otra nomenclatura no será aceptada)</p>
+            <br>            
+            <input type="text" name="fechaUsuario" onkeypress="return validarFecha(event)">            
         </form>
     </div>  
 </body>

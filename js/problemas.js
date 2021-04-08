@@ -126,3 +126,50 @@ function borrar5(){
     document.problema5.resultadoHombres.value = "";
     document.problema5.resultadoMujeres.value = "";
 }
+
+/*
+    Problema 6
+*/
+function fecha(){
+    var fecha = new Date();
+
+    var dia = fecha.getDate;
+    var mes = fecha.getMonth;
+    var año = fecha.getFullYear;
+}
+
+function validarFecha(e){
+    
+    var teclado = (document.all)?e.keyCode:e.which;
+
+    if(teclado == 8) return true;
+
+    
+    var patron = /\d+-\d{2}-\d{4}/g;
+
+    var prueba = String.fromCharCode(teclado);
+
+    return patron.test(prueba);
+}
+
+/*
+    Problema 7
+*/
+
+function numeros7(){
+    var num1 = parseInt(document.problema7.numero1.value);
+    var num2 = parseInt(document.problema7.numero2.value);
+
+    if (num1 == num2){
+       var resultado = num1 * num2;
+       document.problema7.resultado7.value = "Se multiplican: " + resultado; 
+    }   else{
+        if (num1 > num2){
+            var resultado = num1 - num2;
+            document.problema7.resultado7.value = "Se resta: " + resultado; 
+        }   else{
+            var resultado = num1 + num2;
+            document.problema7.resultado7.value = "Se suma: " + resultado; 
+        }
+    }
+}

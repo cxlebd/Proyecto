@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Problema 7</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/problemas.js"></script>
 </head>
 <body>
+    <a href="../problemas.html">Regresar</a>
     <div class="problema">
         <p>
             1) Leer 2 números: si son iguales que los multiplique,
         si el primero es mayor que el segundo que los reste y si no que los sume.
         </p>
-        <form action="problemas.html" method="get" name="problema7" onsubmit="return validar7(this)" class="porcentajes">
-            <div>
-                <b>Número 1:</b>
-                <input type="number" name="numero1">
-            </div>
-            <div>
+        <form action="problema07.html" method="get" name="problema7">
+                <b>Número 1:</b>                
+                <input type="text" name="numero1" onkeypress="return validarn(event)">
+                <br>
                 <b>Número 2:</b>
-                <input type="number" name="numero2">
-            </div>
+                <input type="text" name="numero2" onkeypress="return validarn(event)">
+                <br>
+                <input type="text" readonly name="resultado7">
+                <br>
+                <input type="button" value="Calcular" onclick="numeros7()">
         </form>
     </div>
 </body>
