@@ -173,3 +173,26 @@ function numeros7(){
         }
     }
 }
+
+/*
+    Problema 8
+*/
+
+function numeros8(){
+    var num1 = parseInt(document.problema8.numero1.value);
+    var num2 = parseInt(document.problema8.numero2.value);
+    var num3 = parseInt(document.problema8.numero3.value);
+
+    if (num1 > num2 && num1 > num3){
+        var resultado = num1;
+        document.problema8.resultado.value = "Número 1: " + resultado;
+    }   else{
+        if (num2 > num1 && num2 > num3){
+            var resultado = num2;
+            document.problema8.resultado.value = "Número 2: " + resultado;
+        }   else{
+            var resultado = num3;
+            document.problema8.resultado.value = "Número 3: " + resultado;
+        }
+    }
+}

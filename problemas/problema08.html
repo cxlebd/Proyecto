@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/problemas.js"></script>
+    <title>Problema 8</title>
 </head>
 <body>
+    <a href="../problemas.html">Regresar</a>
     <div class="problema">
         <p>
             2) Leer tres números diferentes e imprimir el número mayor de los tres.
         </p>
         <form action="problemas.html" method="get" name="problema8" class="tres_numeros" onsubmit="return validar8(this)">
-            <div>
                 <b>Número 1:</b>
-                <input type="number" name="numero1">
-            </div>
-            <div>
+                <input type="text" name="numero1">
+                <br>
                 <b>Número 2:</b>
-                <input type="number" name="numero2">
-            </div>
-            <div>
+                <input type="text" name="numero2">
+                <br>
                 <b>Número 3:</b>
-                <input type="number" name="numero3">
-            </div>
+                <input type="text" name="numero3">            
+                <br>
+                <b>Resultado:</b>
+                <input type="text" name="resultado" readonly>
+                <br>
+                <input type="button" value="Calcular" onclick="numeros8()">
         </form>
     </div>
 </body>
