@@ -196,3 +196,34 @@ function numeros8(){
         }
     }
 }
+
+/*
+    Problema 9
+*/
+function funcion9(){
+    var horas = parseInt(document.problema9.horas.value);
+
+    if (horas == 0){
+        alert("Ingrese una hora válida.")
+        document.problema9.horas.value = "";
+    }   else{
+        if (horas < 40){
+            var dinero = horas * 300;
+            document.problema9.resultado9.value = "$" + dinero;
+        }   else{
+            if (horas > 40 && horas <= 48){
+                var horasExtra = horas - 40;
+                var dinero = (horasExtra * 600) + 12000;
+
+                document.problema9.resultado9.value = "$" + dinero;
+            }   else{
+                if (horas > 48){
+                    var horasExtra = horas - 48;
+                    dinero = 16800 + (horasExtra * 900);
+
+                    document.problema9.resultado9.value = "$" + dinero;
+                }
+            }
+        }
+    }
+}

@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Problema 9</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/problemas.js"></script>
 </head>
 <body>
+    <a href="../problemas.html">Regresar</a>
     <div class="problema">
         <p>
         3) Determinar la cantidad de dinero que recibirá un  trabajador por
@@ -14,11 +17,16 @@
         las horas de trabajo exceden de 40, el resto se consideran horas extras 
         y que estas se pagan al doble de una hora normal cuando no exceden de 8;
         si las horas extras exceden de 8 se pagan las primeras 8 al doble de lo que 
-        se pegan las horas normales y el resto al triple.
+        se pegan las horas normales y el resto al triple. Precio por hora: <u>$300</u>
         </p>
-        <form action="problemas.html" method="get" name="problema9" style="margin-top: 15px;" onsubmit="return validar9(this)">
+        <form action="problemas.html" method="get" name="problema9" style="margin-top: 15px;">
             <b>Horas:</b>
-            <input type="number" name="numero1">
+            <input type="text" name="horas" onkeypress="return validarn(event) ">            
+            <br>
+            <b>Resultado: </b>
+            <input type="text" readonly name="resultado9" value="$">
+            <br>
+            <input type="button" value="Calcular" onclick="funcion9()">
         </form>
     </div>
 </body>
