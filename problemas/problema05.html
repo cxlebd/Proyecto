@@ -4,23 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/problemas.js"></script>
+    <title>Problema 5</title>
 </head>
 <body>
+    <a href="../problemas.html">Regresar</a>
     <div class="problema">
         5) Un maestro desea saber que porcentaje de hombres y que porcentaje 
         de mujeres hay en un grupo de estudiantes.
-        <form action="problemas.html" method="get" name="problema5" onsubmit="return validar5(this)" class="porcentajes">
-            <div>
+        <form action="problema05.html.html" method="get" name="problema5">            
                 <b>Hombres:</b>
             <br>
-            <input type="text" method="get" name="hombres" id="hombres">
-            </div>
-            <div>
+            <input type="text" method="get" name="hombres">  
+            <br>                      
                 <b>Mujeres:</b>
-                <br>
-                <input type="text" method="get" id="mujeres">
-            </div>
+            <br>
+            <input type="text" method="get" name="mujeres">  
+            <br>
+            <br>
+            <input type="text" readonly style="border: 0;" name="resultadoMujeres">
+            <br>
+            <input type="text" readonly style="border: 0;" name="resultadoHombres">
+            <br>
+            <input type="button" value="Calcular" onclick="sexo()">
+            <input type="button" value="Borrar" onclick="borrar5()">
         </form>
     </div>
 </body>

@@ -103,3 +103,26 @@ function borrar4(){
     document.problema4.trabajo.value = "";
     document.problema4.resultado4.value = "%";
 }
+
+/*
+    Problema 5
+*/
+
+function sexo(){
+    var hombres = parseInt(document.problema5.hombres.value);
+    var mujeres = parseInt(document.problema5.mujeres.value);
+    var suma = mujeres + hombres;
+
+    var porcentajeHombres = hombres * 100 / suma;
+    var porcentajeMujeres = mujeres * 100 / suma;
+
+    document.problema5.resultadoMujeres.value = "Mujeres: %" + parseInt(porcentajeMujeres);
+    document.problema5.resultadoHombres.value = "Hombres: %" + parseInt(porcentajeHombres);
+}
+
+function borrar5(){
+    document.problema5.hombres.value = "";
+    document.problema5.mujeres.value = "";
+    document.problema5.resultadoHombres.value = "";
+    document.problema5.resultadoMujeres.value = "";
+}
