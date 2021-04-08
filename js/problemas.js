@@ -70,3 +70,36 @@ function borrar3(){
     document.problema3.precio.value = "";
 }
 
+/*
+    Problema 4
+*/
+function calificaciones(){
+    var cal1 = parseInt(document.problema4.cal1.value);
+    var cal2 = parseInt(document.problema4.cal2.value);
+    var cal3 = parseInt(document.problema4.cal3.value);
+    var examen = parseInt(document.problema4.examen.value);
+    var trabajo = parseInt(document.problema4.trabajo.value);    
+
+    var sumaCalif = cal1 + cal2 + cal3;
+    var porcentajeCalif = sumaCalif * 55 / 30;
+    var porcentajeExamen = examen * 30 / 10;
+    var porcentajeTrabajo = trabajo * 15 / 10;
+    var promedio = porcentajeCalif + porcentajeExamen + porcentajeTrabajo;
+    
+    if (cal1 > 10 || cal2 > 10 || cal3 > 10 || examen > 10 || trabajo > 10){
+        alert("La calificación máxima es 10.");        
+        return borrar4();
+    }
+
+    document.problema4.resultado4.value = "%" + promedio;
+}
+
+function borrar4(){
+
+    document.problema4.cal1.value = "";
+    document.problema4.cal2.value = "";
+    document.problema4.cal3.value = "";
+    document.problema4.examen.value = "";
+    document.problema4.trabajo.value = "";
+    document.problema4.resultado4.value = "%";
+}

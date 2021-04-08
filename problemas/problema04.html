@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problema 4</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/problemas.js"></script>
 </head>
 <body>
+    <a href="../problemas.html">Regresar</a>
     <div class="problema">
         4) Un alumno desea saber cual será su calificación final en la materia
         de Algoritmos. Dicha calificación se compone de los siguientes porcentajes: <br>
@@ -14,37 +17,34 @@
         30% de la calificación del examen final. <br>
         15% de la calificación de un trabajo final.
         <br>            
-            <form action="problemas.html" method="get" name="problema4" onsubmit="return validar4(this)" class="calificaciones">
-                <div>
-                    <b>Parcial 1:</b>
-                    <br>
-                    <input type="text">
-                </div>
-                <div>
-                    <b>Examen final:</b>
-                    <br>
-                    <input type="text">
-                </div>
-                <div>
-                    <b>Parcial 2:</b>
-                    <br>
-                    <input type="text">
-                </div>
-                <div>
-                    <b>Trabajo final:</b>
-                    <br>
-                    <input type="text">
-                </div>
-                <div>
-                    <b>Parcial 3:</b>
-                    <br>
-                    <input type="text">
-                </div>       
-                <div>
-                    <br>
-                    <input type="submit">
-                </div>             
-            </form>            
+            <form action="problema04.html" method="GET" name="problema4">
+                <b>Parcial 1:</b>
+                <br>
+                <input type="text" onkeypress="return validarn(event)" name="cal1">
+                <br>
+                <b>Parcial 2:</b>
+                <br>
+                <input type="text" onkeypress="return validarn(event)" name="cal2">
+                <br>
+                <b>Parcial 3:</b>
+                <br>
+                <input type="text" onkeypress="return validarn(event)" name="cal3">
+                <br>
+                <b>Examen final:</b>
+                <br>
+                <input type="text" onkeypress="return validarn(event)" name="examen">
+                <br>
+                <b>Trabajo final:</b>
+                <br>
+                <input type="text" onkeypress="return validarn(event)" name="trabajo">
+                <br>
+                <b>Calificacion final:</b>
+                <br>
+                <input type="text" readonly name="resultado4" value="%">
+                <br><br>
+                <input type="button" onclick="calificaciones()" value="Calcular">
+                <input type="button" onclick="borrar4()" value="Borrar">
+            </form>
     </div>
 </body>
 </html>
